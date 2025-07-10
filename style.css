@@ -1,0 +1,75 @@
+:root {
+    --color-bg: #ffffff;
+    --color-text-main: #000000;
+    --color-text-header: #333333;
+    --color-primary: #f8ecff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+   
+  
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--color-bg);
+  }
+  
+  /* Page structure */
+  .wrapper {
+    min-height: var(--wrapper-height);
+    display: grid;
+    place-items: center;
+    /* margin: 0 1rem; */
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:400px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  #logo {
+    max-height: 20vh;
+  }
+
+
+  #navbar {
+    position: sticky;
+    top: 0;
+    overflow: none;
+  }
+  
+  
+  ul {
+    position: sticky;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    background-color: white;
+    float: right;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: var(--color-primary);
+  }
+  
