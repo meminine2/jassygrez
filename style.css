@@ -49,7 +49,7 @@
     position: sticky;
     list-style-type: none;
     padding: 0;
-    overflow: hidden;
+    overflow: none;
   }
   
   li {
@@ -70,6 +70,7 @@
   }
   
   li a:hover {
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    text-decoration: underline;
   }
   
